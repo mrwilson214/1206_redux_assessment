@@ -14,8 +14,6 @@ export default function Suggestion() {
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
-  console.log(imageUrl, caption, loading, error);
-
   useEffect(() => {
     async function loadSuggestion() {
       dispatch(fetchSuggestion());
